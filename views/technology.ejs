@@ -1,0 +1,45 @@
+<%- include('./partials/header'); %>
+
+  <section id="technology">
+   
+    <div class="row g-0">
+      <div  class="row g-0">
+        <h3 class="techHeading">
+          <span style="color: #979797; font-family: 'Barlow Condensed', sans-serif; ">03</span> Space Launch 101
+        </h3>
+      </div>
+      <div id="techText"  class="col col-lg-7 col-md-12 align-self-center">
+        
+        <div  class="row g-0 smallScreenSizeTechRow">
+          <div class="col col-lg-2 col-md-12 d-flex align-items-stretch">
+            <div class="containerButtonTech">
+              <button class="techButton" style=<%= launchButton %>>
+              <a href="/technology-launch">1</a>
+              </button>
+              <button class="techButton" style=<%= spaceportButton %> ><a href="/technology-spaceport">2</a></button>
+              <button class="techButton" style=<%= spaceButton %>><a href="/technology-space">3</a></button>
+            </div>
+          </div>
+          <div class="col col-lg-10 col-md-12 techDescrip">
+            <div style="color: white;">
+              <h4 class="techSubHeading">The Terminology_</h4>
+              <h2 class="techTitle"> <%= techName %> </h2>
+              <p class="techParag"><%= techDescription %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="techImg" class="col col-lg-5 col-md-12 d-flex justify-content-end align-self-start techImgContainer">
+        <img class="techPortraitImgHidden" src=<%= techImg.portrait %> alt=<%= techImg.portrait %>>
+        <img class="techLandscapeImgHidden" src=<%= techImg.landscape %> alt=<%= techImg.landscape%>>
+     
+       
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <%- include('./partials/footer'); %>

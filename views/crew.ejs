@@ -1,0 +1,33 @@
+
+<%- include('./partials/header'); %>
+
+
+
+  <section id="crew">
+    <div class="crewColumn row g-0 containertToSwap">
+      <div class="crewColumnText col-lg-7 col-md-12 d-flex align-items-stretch align-self-center first">
+            <div style="color: white;" class="row featurette g-0 first">
+                <h3 class="crewHeading"> 
+                    <span style="color: #979797; font-family: 'Barlow Condensed', sans-serif; ">02</span> meet your crew</h3>
+                    <h3 class="featurette-heading fw-normal lh-1 text-muted"> <%= role %>  </h3>
+                    <h2 class="crewCommander"> <%= crewName %> </h2>
+                    <p class="lead crewParagraph"> <%= crewDescription %>  </p>
+                        <div class="buttonCrewRow g-0">
+                          <a style = "<%= commanderBut %>" href="/crew-commander" class="buttonCrew" ></a>
+                          <a style = "<%= specialistBut %>" href="/crew-specialist" class="buttonCrew"></a>
+                          <a style = "<%= pilotBut %>" href="/crew-pilot"class="buttonCrew" ></a>
+                          <a style = "<%= engineerBut %>" href="/crew-engineer"class="buttonCrew" ></a>
+                   
+                        </div>
+                  </div>
+        </div>
+        <div class="crewColumnImg col-lg-5 col-md-12 d-flex align-items-stretch align-self-end">
+            <img  class="crewImg img-fluid mx-auto" 
+            src= <%= crewImg %> alt= <%= crewImg %> >
+        </div>
+      </div>
+  
+  </section>
+
+
+  <%- include('./partials/footer'); %>

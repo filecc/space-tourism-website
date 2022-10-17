@@ -1,0 +1,22 @@
+{
+  "name": "space-tourism-website",
+  "version": "1.0.0",
+  "description": "a website for a space tourism agency",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "filecc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "device": "^0.3.12",
+    "ejs": "^3.1.8",
+    "ejs-lint": "^2.0.0",
+    "express": "^4.18.2",
+    "jquery": "^3.6.1",
+    "nodemon": "^2.0.20",
+    "screen-size-detector": "^1.0.4",
+    "window-size": "^1.1.1"
+  }
+}

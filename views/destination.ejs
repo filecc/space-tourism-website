@@ -1,0 +1,59 @@
+<%- include('./partials/header'); %>
+
+  <section id="destination">
+
+    <div class="row g-0">
+      <div class="col-lg-5 col-md-12 col-sm-12 text-center ">
+        <h3 class="destinationHeading">
+          <span style="color: #979797; font-family: 'Barlow Condensed', sans-serif; ">01</span> Pick your destination
+        </h3>
+        <img class="destinationImage" src=<%=planetImg %> alt="">
+      </div>
+
+
+      <div class="col-lg-7 col-md-12 col-sm-12 destinationChooseContainer ">
+
+        <ul class="destinationChoose nav nav-item">
+          <a href="/destination-moon">
+            <li class="destinationLink"> MOON </li>
+          </a>
+          <a href="/destination-mars">
+            <li class="destinationLink"> MARS </li>
+          </a>
+          <a href="/destination-europa">
+            <li class="destinationLink"> EUROPA </li>
+          </a>
+          <a href="/destination-titan">
+            <li class="destinationLink"> TITAN </li>
+          </a>
+
+        </ul>
+
+        <h2 class="planet">
+          <%= planetName %>
+        </h2>
+        <p class="planetParag">
+          <%= planetDescription %>
+        </p>
+        <div class="hrDestination"></div>
+        <div class="row g-0 distanceTravelContainer">
+          <div class="col-6 distance">
+            <h4>Avg. distance</h4>
+            <h5>
+              <%= planetDistance %>
+            </h5>
+          </div>
+          <div class="col-6 travelTime">
+            <h4>Est. travel time</h4>
+            <h5>
+              <%= planetTimeTravel %>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <%- include('./partials/footer'); %>
